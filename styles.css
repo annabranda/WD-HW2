@@ -1,0 +1,142 @@
+:root {
+    --primary: #eb2525;
+    --dark: #500014;
+    --light: #fcf8f8;
+    --text: #553333;
+    --border: #f0e2e2;
+}
+
+.skip-link {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    color: white;
+    padding: 2px;
+    transition: top 0.3s;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--light);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: larger;
+    font-weight: bold;
+    background: var(--dark);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+nav {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: bolder;
+
+}
+
+a:hover { color: var(--primary); }
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    min-height: 80vh;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--dark);
+    color: white;
+    margin-top: 3rem;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: white;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+th, td {
+    border: 1px solid var(--border);
+    padding: 12px;
+    text-align: left;
+}
+
+th { background-color: #f9f1f1; }
+
+fieldset {
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.form-group { margin-bottom: 1rem; }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background: var(--dark);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover { background: var(--primary); }
+
+tbody tr:nth-child(even) {
+    background-color: #f9f1f1;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}

@@ -1,0 +1,27 @@
+1
+Paragraph A
+This paragraph receives the following properties: gray color, Georgia font of size 1rem.
+These properties come from an element selector (p).
+
+Paragraph B
+This paragraph receives the following properties: steelblue color, Arial font of size 1.25rem, blue (#e8f4fd) background color and a solid steelblue border on the left.
+These properties come from a class selector (.info) that overrides p.
+
+Paragraph C
+This paragraph receives the following properties: darkred color, Courier New font of size 0.8rem in an italic style, all uppercase letters, red (#fff0f0) background color and a dashed darkred border.
+These properties come from a ID selector (#warning) that overrides p.
+
+Paragraph D
+This paragraph receives the following properties: darkorange color, Courier New font of size 1.1rem in a normal style, all uppercase letters, orange (#fff7e0) background color and a solid darkorange border.
+These properties come from a ID and class selector (#warning.info) that overrides p.
+
+Element selector (p) properties: gray color, Georgia font of size 1rem.
+Class selector (.info) properties: steelblue color, Arial font of size 1.25rem, blue (#e8f4fd) background color and a solid steelblue border on the left.
+ID selector (#warning) properties: darkorange color, font size 1.1rem in a normal style, orange (#fff7e0) background color and a solid darkorange border.
+
+2
+The color darkorange wins in paragraph D because ID selectors override all other selectors. 'Courier New', monospace font wins for the same reason, but because the ID selector doesn't mention a font, it uses the font from the class selector.
+
+3
+When we create an external CSS file with some properties, these will be overridden by the internal CSS properties.
+First we created an external CSS file and added properties for h1, the color navy. Then we created an internal CSS rule for h1, the color crimson. Afterwards, the final result for words that use h1 is a crimson color font.
